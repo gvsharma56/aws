@@ -41,6 +41,6 @@ STORED AS INPUTFORMAT
 OUTPUTFORMAT 
   'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
 LOCATION
-  's3://ht-clickstream-elb-data/prod-elblog/AWSLogs/588399947422/elasticloadbalancing/ap-south-1'
+  's3://ht-clickstream-elb-data/<bucketname>/AWSLogs/<account_id>/elasticloadbalancing/<region>'
 TBLPROPERTIES (
   'transient_lastDdlTime'='1539784367')
